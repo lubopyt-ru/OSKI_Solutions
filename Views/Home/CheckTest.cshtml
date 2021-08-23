@@ -1,0 +1,13 @@
+﻿@model ResultViewModel
+
+@Html.ActionLink("<--Back", "index")
+
+@{
+
+    var All = int.Parse(@Model.AllTestsCount);
+    var Correct = int.Parse(@Model.CorrectTestsCount);
+    var NotCorrect = All - Correct;
+}
+<p><h1>Всего тестов:          @All</h1></p>
+<p><h1>Правильных ответов:    @Correct</h1></p>
+<p><h1>Не правильных ответов: @NotCorrect</h1></p>

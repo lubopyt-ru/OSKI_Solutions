@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSKI_Solutions_Test", "OSKI_Solutions_Test.csproj", "{03F9BA7E-5B28-4043-8605-2A620E4E05F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject3", "..\UnitTestProject3\UnitTestProject3.csproj", "{6D3D1AC0-78C7-4ED5-ABD4-F0991B2BA142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F9BA7E-5B28-4043-8605-2A620E4E05F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F9BA7E-5B28-4043-8605-2A620E4E05F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F9BA7E-5B28-4043-8605-2A620E4E05F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F9BA7E-5B28-4043-8605-2A620E4E05F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3D1AC0-78C7-4ED5-ABD4-F0991B2BA142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3D1AC0-78C7-4ED5-ABD4-F0991B2BA142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3D1AC0-78C7-4ED5-ABD4-F0991B2BA142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3D1AC0-78C7-4ED5-ABD4-F0991B2BA142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BDC3857-816A-4B83-B432-824F01B21E9F}
+	EndGlobalSection
+EndGlobal

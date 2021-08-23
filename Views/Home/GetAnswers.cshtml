@@ -1,0 +1,41 @@
+﻿@model AnswerViewModel
+
+@{
+    int i = 0;
+}
+
+<style>
+</style>
+
+<div class="border1">
+    <p><h1>Question: </h1></p>
+    <p>@Model.TestTitle</p>
+    <p></p>
+    <p>
+        <button id="CorrectAnswer" class="btn btn-primary">Show correct answer</button>
+    </p>
+</div>
+<p></p>
+
+@using (Html.BeginForm("CheckTest", "Home", FormMethod.Post, new { id = "form2" }))
+{
+    <div class="border1">
+        <p><h1>Answers: </h1></p>
+
+        @foreach (Answers a in Model.AswerList)
+        {
+            i += 1;
+            <div class="border1" style="border-width:2px;">
+
+                <p><input type="radio" name="AnswerId" value=@a.Id title="start" id=answer_@i checked iscorrect=@a.IsCorrect /></p>
+                <label for=answer_@i>@a.Text</label>
+                @*<input type="hidden" name="IsCorrect" value=@a.IsCorrect v=@a.IsCorrect />*@<input type="hidden" name="IsCorrect" value=@a.IsCorrect v=@a.IsCorrect />
+            </div>
+            <p></p>
+
+        }
+    </div>
+    <p></p>
+    <input type="hidden" name="TestId" value=@Model.TestId>
+    <p><input class="btn btn-primary" type="submit" value="Proceed"></p>
+}

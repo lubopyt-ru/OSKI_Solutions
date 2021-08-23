@@ -1,0 +1,40 @@
+﻿@model List<Test>
+
+@{
+    int i = 0;
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Testing</h1>
+    <p><h1> Please select one of the tests</h1></p>
+</div>
+
+
+@using (Html.BeginForm("GetAnswers", "Home", FormMethod.Post))
+{
+    @foreach (Test t in Model)
+    {
+        i += 1;
+        <div class="border1">
+
+            <p>
+                <label for="@t.Id" style="font-size:small">Start with:</label>
+                <input id="@t.Id" type="radio" name="TestId" value="@t.Id" title="start" checked />
+            </p>
+            <label for="test_@i">@t.Text</label>
+        </div>
+        <p></p>
+        <input type="hidden" name="NotPassedTestsId" value="@t.Id" />
+
+    }
+
+    <p>
+        <label for="ch">I Agree</label>
+        <input type="checkbox" name="Agree" value="true" id="ch" />
+    </p>
+
+
+    <p><input class="btn btn-primary" type="submit" value="Proceed" id="submit_01" disabled="disabled" sty></p>
+}
+
